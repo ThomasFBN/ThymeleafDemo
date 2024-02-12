@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Er det Fredag?</title>
+</head>
+<body>
+
+<h1>Er det Fredag?</h1>
+
+<div th:if="${currentDayOfWeek == 'Friday'}">
+  <p>Det er fredag</p>
+</div>
+<div th:unless="${currentDayOfWeek == 'Friday'}">
+  <p>Det er ikke fredag</p>
+</div>
+
+</body>
+</html>

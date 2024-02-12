@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>findall</title>
+</head>
+<body>
+<div th:each="person : ${list}">
+    <span th:text="${person.name} + ' ' + ${person.age}"/>
+</div>
+</body>
+</html>
